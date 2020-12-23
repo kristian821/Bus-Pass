@@ -11,7 +11,7 @@ import SwiftUI
 struct Bus_PassApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RouteListView()
         }
     }
 }
