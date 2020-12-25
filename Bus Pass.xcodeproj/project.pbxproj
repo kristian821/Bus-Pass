@@ -14,6 +14,7 @@
 		EA44AB872593C1F10064A198 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA44AB862593C1F10064A198 /* MapKit.framework */; };
 		EA44AB8A2593C2930064A198 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44AB892593C2930064A198 /* Routes.swift */; };
 		EA44AB8D2593C2F70064A198 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44AB8C2593C2F70064A198 /* RouteDetailView.swift */; };
+		EA44AB91259468EB0064A198 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44AB90259468EB0064A198 /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EA44AB862593C1F10064A198 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		EA44AB892593C2930064A198 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
 		EA44AB8C2593C2F70064A198 /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
+		EA44AB90259468EB0064A198 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				EA44AB772593C0520064A198 /* RouteListView.swift */,
 				EA44AB8C2593C2F70064A198 /* RouteDetailView.swift */,
 				EA44AB892593C2930064A198 /* Routes.swift */,
+				EA44AB90259468EB0064A198 /* Location.swift */,
 				EA44AB792593C0530064A198 /* Assets.xcassets */,
 				EA44AB7E2593C0530064A198 /* Info.plist */,
 				EA44AB7B2593C0530064A198 /* Preview Content */,
@@ -158,6 +161,7 @@
 			files = (
 				EA44AB782593C0520064A198 /* RouteListView.swift in Sources */,
 				EA44AB8D2593C2F70064A198 /* RouteDetailView.swift in Sources */,
+				EA44AB91259468EB0064A198 /* Location.swift in Sources */,
 				EA44AB8A2593C2930064A198 /* Routes.swift in Sources */,
 				EA44AB762593C0520064A198 /* Bus_PassApp.swift in Sources */,
 			);

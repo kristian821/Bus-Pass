@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 @main
 struct Bus_PassApp: App {
+    
     var body: some Scene {
         WindowGroup {
             RouteListView()

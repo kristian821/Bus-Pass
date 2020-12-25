@@ -8,29 +8,46 @@
 import Foundation
 import SwiftUI
 import MapKit
+import CoreLocation
 
 struct RouteDetailView: View {
     
+    
+    @State var testRegion = MKCoordinateRegion(center: MKUserLocation().coordinate, span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
+    @State var trackingmode: MapUserTrackingMode = .follow
+    var locationManager = LocationManager()
+    var route: Route
+   var userLocation = MKUserLocation()
     var date = Date()
-    var currentLocation = MKMapPoint()
-    var mapRect = MKMapRect(origin: currentLocation, size: <#T##MKMapSize#>)
-    var map = Map(mapRect: <#T##Binding<MKMapRect>#>, interactionModes: <#T##MapInteractionModes#>, showsUserLocation: <#T##Bool#>, userTrackingMode: <#T##Binding<MapUserTrackingMode>?#>)
+    
+   
+    
+    
+    
     
     var body: some View {
         VStack {
+            Map(coordinateRegion: $testRegion, interactionModes: .all, showsUserLocation: true, userTrackingMode: $trackingmode)
+                .edgesIgnoringSafeArea(.top)
             
+            Spacer()
+            Text("Leaves in 10 Mins!")
+                .font(.title2).foregroundColor(.red)
+            }
+        .navigationBarTitle(route.name)
+        .onAppear(perform: {
+            locationManager.startUpdating()
+        })
         
-        Text("Leaves in 10 Mins!")
-            .font(.title2).foregroundColor(.red)
-        }
-            .navigationBarTitle("Route 20")
     }
 }
 
 struct RouteDetailView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            RouteDetailView()
+            RouteDetailView(route: testData[0])
         }
     }
 }
+
+
